@@ -4,4 +4,9 @@
     <string name="nav_home">Home</string>
     <string name="nav_features">Dashboard</string>
     <string name="nav_settings">Settings</string>
+
+    <string name="home_todo_title">To-Do</string>
+    <string name="home_dailywisdom_title">Daily Wisdom</string>
+
+    <string name="store_purchase_history"><u>View purchase history</u></string>
 </resources>

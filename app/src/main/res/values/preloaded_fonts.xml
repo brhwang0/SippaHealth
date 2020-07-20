@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="preloaded_fonts" translatable="false">
+        <item>@font/overpass_light</item>
+        <item>@font/puritan</item>
+        <item>@font/reem_kufi</item>
+        <item>@font/salsa</item>
+        <item>@font/snippet</item>
+    </array>
+</resources>
