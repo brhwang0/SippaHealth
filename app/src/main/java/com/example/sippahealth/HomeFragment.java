@@ -42,8 +42,8 @@ public class HomeFragment extends Fragment {
         RecyclerView rvDailyWisdom = Objects.requireNonNull(getView()).findViewById(R.id.rvDailyWisdom);
         RecyclerView rvToDo = Objects.requireNonNull(getView()).findViewById(R.id.rvToDo);
 
-        dailyWisdomItemArrayList.add(new DailyWisdomItem("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "DailyWisdomActivity"));
-        dailyWisdomItemArrayList.add(new DailyWisdomItem("Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.", "DailyWisdomActivity"));
+        dailyWisdomItemArrayList.add(new DailyWisdomItem("July 20 - By keeping blood sugar levels under 100 mg/dL before eating and under 180 mg/dL after eating, people with diabetes can significantly reduce their risk of adverse effects from the disease.", "DailyWisdomActivity"));
+        dailyWisdomItemArrayList.add(new DailyWisdomItem("July 19 - Good nutrition is one of the keys to a healthy life. You can improve your health by keeping a balanced diet. You should eat foods that contain vitamins and minerals. This includes fruits, vegetables, whole grains, dairy, and a source of protein.", "DailyWisdomActivity"));
         initDailyWisdomRecyclerView();
 
         toDoItemArrayList.add(new ToDoItem("Record your daily glucose levels.", "GlucoseActivity"));
