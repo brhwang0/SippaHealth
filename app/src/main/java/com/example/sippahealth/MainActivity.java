@@ -8,6 +8,8 @@ import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.media.MediaPlayer;
 import android.os.Bundle;
 import android.util.Log;
@@ -33,12 +35,7 @@ import com.stfalcon.chatkit.messages.MessagesListAdapter;
 
 import java.util.ArrayList;
 
-public class MainActivity extends ChatMainActivity
-       {
-
-
-
-
+public class MainActivity extends ChatMainActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,11 +47,11 @@ public class MainActivity extends ChatMainActivity
         bottomNav.setOnNavigationItemSelectedListener(navListener);
         bottomNav.setSelectedItemId(R.id.nav_home);
 
-
-
-
-
-
+        getSupportActionBar().setDisplayShowTitleEnabled(false);
+        getSupportActionBar().setBackgroundDrawable(new ColorDrawable(Color.DKGRAY));
+        getSupportActionBar().setDisplayShowHomeEnabled(true);
+        getSupportActionBar().setLogo(R.drawable.sines_sippa_sq_one_and_half_x);
+        getSupportActionBar().setDisplayUseLogoEnabled(true);
 
     }
 
