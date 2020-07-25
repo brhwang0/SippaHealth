@@ -35,6 +35,9 @@ public class DailyWisdomAdapter extends RecyclerView.Adapter<DailyWisdomAdapter.
         holder.listItem.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                TextView dw=view.findViewById(R.id.dailywisdomContent);
+                String dwt=dw.getText().toString();
+                HomeFragment.getInstance().showDialog(dwt);
             }
         });
     }
