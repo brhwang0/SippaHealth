@@ -16,6 +16,7 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
+import androidx.fragment.app.DialogFragment;
 import androidx.fragment.app.Fragment;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -34,6 +35,7 @@ public class HomeFragment extends Fragment {
     private ArrayList<DailyWisdomItem> dailyWisdomItemArrayList = new ArrayList<>();
     private ArrayList<ToDoItem> toDoItemArrayList = new ArrayList<>();
     ////////////////////////////////////////////////////////////////////////////////chat seperator
+    private static HomeFragment instance;
     private  TextView seperator;
     private  RelativeLayout chater;
     private FrameLayout frameLayout;
@@ -69,6 +71,7 @@ public class HomeFragment extends Fragment {
         frameLayout=(FrameLayout) view.findViewById(R.id.frame);
         messagesList = (MessagesList) view.findViewById(R.id.messagesList);
         input = (MessageInput) view.findViewById(R.id.input);
+        instance = this;
         //end seperator
 
         return view;
@@ -176,6 +179,7 @@ public class HomeFragment extends Fragment {
         dailyWisdomItemArrayList.add(new DailyWisdomItem("July 19 - Good nutrition is one of the keys to a healthy life. You can improve your health by keeping a balanced diet. You should eat foods that contain vitamins and minerals. This includes fruits, vegetables, whole grains, dairy, and a source of protein.", "DailyWisdomActivity"));
         initDailyWisdomRecyclerView();
 
+
         toDoItemArrayList.add(new ToDoItem("Record your daily glucose levels.", "GlucoseActivity"));
         toDoItemArrayList.add(new ToDoItem("Log your meal.", "MealActivity"));
         initToDoRecyclerView();
@@ -194,8 +198,7 @@ public class HomeFragment extends Fragment {
         recyclerView.setAdapter(adapter);
         LinearLayoutManager layoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         recyclerView.setLayoutManager(layoutManager);
-    }
-
+       }
     // Creates a recycler view of to do list items
     private void initToDoRecyclerView() {
         RecyclerView recyclerView = Objects.requireNonNull(getView()).findViewById(R.id.rvToDo);
@@ -204,4 +207,13 @@ public class HomeFragment extends Fragment {
         recyclerView.setLayoutManager(new LinearLayoutManager(getContext()));
     }
 
+
+    ///for the dialog
+    void showDialog(String dwt) {
+        DialogFragment newFragment = DailyWisdomDialog.newInstance(dwt);
+        newFragment.show(getFragmentManager(), "dialog");
+    }
+    public static HomeFragment getInstance() {
+        return instance;
+    }
 }
