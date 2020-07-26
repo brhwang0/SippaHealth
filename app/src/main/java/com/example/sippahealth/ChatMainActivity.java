@@ -1,21 +1,14 @@
 package com.example.sippahealth;
 
 
-import android.app.AlertDialog;
 import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
-import android.media.MediaPlayer;
 import android.os.Bundle;
+import android.support.v7.app.AlertDialog;
 import android.util.Log;
-import android.view.MotionEvent;
 import android.view.View;
-import android.view.ViewTreeObserver;
-import android.widget.RelativeLayout;
 
-import com.colorgreen.swiper.OnSwipeTouchListener;
-import com.colorgreen.swiper.SwipeAction;
-import com.colorgreen.swiper.SwipeActionListener;
 import com.example.sippahealth.chat_objects.Message;
 import com.example.sippahealth.holders.IncomingButtonMessageViewHolder;
 import com.example.sippahealth.holders.OutgoingButtonMessageViewHolder;
@@ -24,8 +17,6 @@ import com.stfalcon.chatkit.messages.MessageHolders;
 import com.stfalcon.chatkit.messages.MessageInput;
 import com.stfalcon.chatkit.messages.MessagesList;
 import com.stfalcon.chatkit.messages.MessagesListAdapter;
-
-import java.util.ArrayList;
 
 
 //please see messagefixtures and demomessagesactivity for more details

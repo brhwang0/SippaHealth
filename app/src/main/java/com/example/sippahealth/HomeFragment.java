@@ -3,6 +3,12 @@ package com.example.sippahealth;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Message;
+import android.support.annotation.NonNull;
+import android.support.annotation.Nullable;
+import android.support.v4.app.DialogFragment;
+import android.support.v4.app.Fragment;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.MotionEvent;
@@ -14,12 +20,7 @@ import android.widget.FrameLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
 
-import androidx.annotation.NonNull;
-import androidx.annotation.Nullable;
-import androidx.fragment.app.DialogFragment;
-import androidx.fragment.app.Fragment;
-import androidx.recyclerview.widget.LinearLayoutManager;
-import androidx.recyclerview.widget.RecyclerView;
+
 
 import com.colorgreen.swiper.OnSwipeTouchListener;
 import com.colorgreen.swiper.SwipeAction;
@@ -52,8 +53,13 @@ public class HomeFragment extends Fragment {
         int y = l[1];
         int w = view.getWidth();
         int h = view.getHeight();
+//        Log.d("floatt1",""+y);
+//        Log.d("floatt2",""+(y-h));
+//        Log.d("floatt3",""+ry);
 
-        if ( ry < y || ry > y + h) {
+
+
+        if ( ry > y || ry < y - h) {
             return false;
         }
         return true;
@@ -146,7 +152,11 @@ public class HomeFragment extends Fragment {
                 swipeAction.setDirection(SwipeAction.DragDirection.Up);
 
                 //set steps and drag threshold
-                swipeAction.setSteps(new float[]{targetHeight, targetHeight - targetHeight * 0.3f, 0});
+
+                //get hieght of statusbar
+                Integer hieght=((MainActivity)getActivity()).gethieght();
+                
+                swipeAction.setSteps(new float[]{targetHeight, targetHeight - targetHeight * 0.3f, hieght});
                 swipeAction.setDragThreshold(0.4f);
 
                 //add the swipe action to listner
