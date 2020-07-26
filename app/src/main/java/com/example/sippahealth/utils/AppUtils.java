@@ -1,9 +1,9 @@
 package com.example.sippahealth.utils;
 
 import android.content.Context;
+import android.support.annotation.StringRes;
 import android.widget.Toast;
 
-import androidx.annotation.StringRes;
 
 /*
  * for showing toast messages could do without this might remove in fututre

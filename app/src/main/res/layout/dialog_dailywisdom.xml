@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <RelativeLayout
-    xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
     android:layout_margin="10dp"
     android:layout_centerInParent="true"
     android:background="@drawable/dialog_background"
@@ -25,7 +27,7 @@
         android:weightSum="99">
         <ImageButton
             android:layout_width="0dp"
-            android:src="@drawable/like_select"
+            app:srcCompat="@drawable/like_select"
             android:background="@drawable/round_button"
             android:id="@+id/like"
             android:layout_height="50dp"
@@ -35,14 +37,14 @@
             android:layout_height="50dp"
             android:background="@drawable/round_button"
             android:id="@+id/dislike"
-            android:src="@drawable/dislike_select"
+            app:srcCompat="@drawable/dislike_select"
             android:layout_weight="33"/>
         <ImageButton
             android:layout_width="0dp"
             android:layout_height="50dp"
             android:background="@drawable/round_button"
             android:id="@+id/dismiss"
-            android:src="@drawable/dismiss_select"
+            app:srcCompat="@drawable/dismiss_select"
             android:layout_weight="33"/>
     </LinearLayout>
 </RelativeLayout>
