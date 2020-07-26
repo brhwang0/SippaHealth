@@ -155,7 +155,7 @@ public class HomeFragment extends Fragment {
 
                 //get hieght of statusbar
                 Integer hieght=((MainActivity)getActivity()).gethieght();
-                
+
                 swipeAction.setSteps(new float[]{targetHeight, targetHeight - targetHeight * 0.3f, hieght});
                 swipeAction.setDragThreshold(0.4f);
 
