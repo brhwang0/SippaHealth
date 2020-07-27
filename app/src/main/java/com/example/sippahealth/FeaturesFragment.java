@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+
 public class FeaturesFragment extends Fragment {
 
     @Nullable

@@ -12,7 +12,6 @@ import android.view.ViewGroup;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.sippahealth.R;
 
 import java.util.ArrayList;
 
