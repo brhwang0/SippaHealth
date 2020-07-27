@@ -16,7 +16,7 @@
     android:background="@color/appMainTheme">
 
 
-
+    <!--
     <Button
         android:id="@+id/btnBalance"
 
@@ -29,6 +29,7 @@
 
         android:background="@drawable/button_balance"
         android:text="Balance"/>
+        -->
 
     <TextView
         android:id="@+id/tvDailyWisdom"
@@ -37,7 +38,7 @@
         android:layout_height="wrap_content"
 
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btnBalance"
+        app:layout_constraintTop_toTopOf="parent"
         android:layout_margin="20dp"
 
         android:fontFamily="@font/snippet"

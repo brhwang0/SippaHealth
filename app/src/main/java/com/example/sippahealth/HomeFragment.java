@@ -173,7 +173,7 @@ public class HomeFragment extends Fragment {
         ////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 
-
+        /*
         Button storeButton = Objects.requireNonNull(getView()).findViewById(R.id.btnBalance);
         storeButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -181,7 +181,7 @@ public class HomeFragment extends Fragment {
                 openStore();
             }
         });
-
+        */
         RecyclerView rvDailyWisdom = Objects.requireNonNull(getView()).findViewById(R.id.rvDailyWisdom);
         RecyclerView rvToDo = Objects.requireNonNull(getView()).findViewById(R.id.rvToDo);
 
