@@ -32,6 +32,7 @@ public class MainActivity extends ChatMainActivity {
 
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("SIPPA - YOUR HEALTH. YOUR DATA. OWN IT!");
 
     }
 
