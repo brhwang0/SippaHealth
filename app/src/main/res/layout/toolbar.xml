@@ -4,7 +4,22 @@
     android:layout_width="match_parent" android:layout_height="wrap_content"
     android:background="@color/dark_gray"
     android:elevation="4dp"
+    app:contentInsetLeft="0dp"
+    app:contentInsetStart="0dp"
     android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
     app:titleTextAppearance="@style/Toolbar.TitleText">
+
+    <ImageView
+        android:layout_width="100dp"
+        android:layout_height="50dp"
+        android:src="@drawable/sines_sippa_sq_one_and_half_x"/>
+    
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/action_title"
+        android:textSize="12sp"/>
+
 
 </android.support.v7.widget.Toolbar>
